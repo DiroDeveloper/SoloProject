@@ -8,52 +8,91 @@ namespace ProjectTests
     [TestClass]
     public class BasketTest
     {
-        [TestMethod]
-        public void Test_additem_method_in_basket_return_Empty_list_if_no_book_added()
+        Basket basket;
+
+        public BasketTest()
         {
-            //Arrange
-            Basket basket = new Basket();
-            basket.listOfItems = new List<Item>(); 
-            //Act
-            var listOfItems = basket.getItemInBasket();
-            //Assert
-            Assert.AreEqual(0, listOfItems.Count);
+            //
+            // TODO: Add constructor logic here
+            //
         }
 
+
+        [TestInitialize()]
+        public void TestInitialize()
+        {
+            basket = new Basket();
+        }
+        
         [TestMethod]
-        public void Test_additem_method_in_basket_return_listlengthof_one_when_one_item_added()
+        public void Test_No_Item_Added_basket_returns_0_item()
         {
             //Arrange
-            Basket basket = new Basket();
-            Item item = new Item();
-            basket.listOfItems = new List<Item>();
-          
-
-           //Act
-            var listOfItems = basket.additem();
-            listOfItems.Add(new Item());
             
+            //Act
+           
+            //Assert
+            Assert.AreEqual(0, basket.Size);
+        }
+
+
+        [TestMethod]
+        public void Test_When_One_Item_Added_Basket_Size_Is_One()
+        {
+            //Arrange
+            basket.Add(new Item());
+            //Act
 
             //Assert
-            Assert.AreEqual(1, listOfItems.Count);
+            Assert.AreEqual(1, basket.Size);
         }
 
         [TestMethod]
-        public void Test_additem_method_in_basket_return_listlengthof_two_when_two_items_added()
+        public void Test_When_Two_Items_Added_Basket_Size_Is_Two()
         {
             //Arrange
-            Basket basket = new Basket();
-            Item item = new Item();
-            basket.listOfItems = new List<Item>();
+            basket.Add(new Item());
+            basket.Add(new Item());
 
 
             //Act
-            var listOfItems = basket.additem();
-            listOfItems.Add(new Item());
-            listOfItems.Add(new Item());
 
             //Assert
-            Assert.AreEqual(2, listOfItems.Count);
+            Assert.AreEqual(2, basket.Size);
+        }
+
+        [TestMethod]
+        public void TestGivenAValidBasketWhenNoItemAddedThenGetItemLengthIsZero()
+        {
+            // Arrange
+            // Act
+            List<Item> items = basket.GetItem();
+            // Assert            
+            Assert.AreEqual(0, items.Count);
+        }
+
+        [TestMethod]
+        public void TestGivenAValidBasketWhenOneItemAddedThenGetItemLengthIsOne()
+        {
+            // Arrange
+            basket.Add(new Item());
+            // Act
+            List<Item> items = basket.GetItem();
+            // Assert            
+            Assert.AreEqual(1, items.Count);
+        }
+
+        [TestMethod]
+        public void TestGivenAValidBasketWhenTwoItemAddedThenGetItemLengthIsTwo()
+        {
+            // Arrange
+            basket.Add(new Item());
+            basket.Add(new Item());
+          
+            // Act
+            List<Item> items = basket.GetItem();
+            // Assert            
+            Assert.AreEqual(2, items.Count);
         }
     }
 }

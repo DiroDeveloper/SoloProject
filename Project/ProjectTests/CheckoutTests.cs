@@ -9,49 +9,44 @@ namespace ProjectTests
     public class CheckoutTests
     {
         [TestMethod]
-        public void Test_When_one_item_is_added_to_the_basked_using_addbookmethod_CalculteTotal_Method_gives_Total_for_one_item()
-
+        public void TestGivenAValidtillWhenAnEmptyBasketIsProcessedThenTotalIsZero()
         {
-            //Arrange
-            Basket basket = new Basket();
-            Item item = new Item();
-            basket.listOfItems = new List<Item>();
-            
-            item.price = 8;
+            // Arrange
             Till till = new Till();
-
-            //Act
-            var listOfItems = basket.additem();
-            listOfItems.Add(new Item());
-            var total = till.calculateTotal(new Item());
-          
-            
-            //Assert
-            Assert.AreEqual(8, 8);
-
+            // Act
+            double total = till.Process(new Basket());
+            // Assert
+            Assert.AreEqual(0.0, total);
         }
 
         [TestMethod]
-        public void Test_When_Two_items_are_added_to_the_basked_using_addbookmethod_CalculteTotal_Method_gives_Total_for_Two_item()
+        public void TestGivenAValidTillWhenBasketWithOneItemIsProcessedThenTotalIsSameAsPriceOfItem()
         {
-            //Arrange
-            Basket basket = new Basket();
-            Item item = new Item();
-            basket.listOfItems = new List<Item>();
-
-            item.price = 8;
+            // Arrange
+            const double PRICE = 8.00;
             Till till = new Till();
-
-            //Act
-            var listOfItems = basket.additem();
-            listOfItems.Add(new Item());
-            listOfItems.Add(new Item());
-            var total = till.calculateTotal(new Item());
-
-
-            //Assert
-            Assert.AreEqual(8, 8);
-
+            Basket basket = new Basket();
+            basket.Add(new Item() { price = PRICE });
+            // Act
+            double total = till.Process(basket);
+            // Assert
+            Assert.AreEqual(PRICE, total);
         }
+
+        [TestMethod]
+        public void TestGivenAValidTillWhenBasketWithOneItemIsProcessedThenTotalIsCalculated()
+        {
+            // Arrange
+            const double PRICE = 8.00;
+            Till till = new Till();
+            Basket basket = new Basket();
+            basket.Add(new Item() { price = PRICE });
+            basket.Add(new Item() { price = PRICE });
+            // Act
+            double total = till.Process(basket);
+            // Assert
+            Assert.AreEqual(PRICE * 2, total);
+        }
+
     }
 }

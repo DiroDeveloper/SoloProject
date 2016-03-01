@@ -8,19 +8,27 @@ namespace ProjectClasses
 {
     public class Basket
     {
-        public List<Item> listOfItems { get; set; }
+        private List<Item> items = new List<Item>();
 
-        public List<Item> getItemInBasket()
+        public int Size
         {
-            return listOfItems;
+            get
+            {
+                return items.Count;
+            }
         }
 
-        public List<Item> additem()
+        public void Add(Item item)
         {
-          
-            return listOfItems;
-
+            items.Add(item);
         }
-       
+
+
+
+        public List<Item> GetItem()
+        {
+            return items.ToList();
+        }
     }
 }
+

@@ -10,6 +10,12 @@ namespace ProjectClasses
     {
         public int catId { get; set; }
 
-        public int price { get; set; }
+        public double price { get; set; }
+
+        public string Name { get; set; }
+
+        
+
+      
     }
 }

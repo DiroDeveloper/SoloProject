@@ -6,13 +6,34 @@ using System.Threading.Tasks;
 
 namespace ProjectClasses
 {
-   public class Till
+    public class Till
     {
-       Basket basket = new Basket();
-       
-        public int calculateTotal(Item item)
+
+        public double Process(Basket basket)
         {
-            item.price * item.count
+            List<Item> items = basket.GetItem();
+            double total = 0.0;
+            foreach (Item item in items)
+            {
+                total += item.price;
+            }
+            return total;
         }
     }
 }
+
+        
+   
+
+
+           
+       
+           
+        
+
+
+         
+        
+
+       
+    
