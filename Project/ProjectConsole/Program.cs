@@ -5,12 +5,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+
+
 namespace ProjectConsole
 {
     public class Program
     {
-        static void Main(string[] args)
+
+
+
+        static void Mainxxx(string[] args)
         {
+
+
+
+
+
+
+
+
             Basket basket = new Basket();
             Till till = new Till();
 
@@ -30,10 +44,11 @@ namespace ProjectConsole
                 }
             }
 
-                double total = till.Process(basket);
-                Console.WriteLine("The total is " + total);
-                Console.WriteLine("Have a nice day!");
-                Console.Read();
+            double total = till.Process(basket);
+            Console.WriteLine("The total is " + total);
+            Console.WriteLine("Have a nice day!");
+            Console.Read();
         }
     }
 }
+        

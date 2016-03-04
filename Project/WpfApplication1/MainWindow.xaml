@@ -1,0 +1,99 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="550" Width="525">
+    <Grid>
+        <!--Using grid layout-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition MinWidth="116" Width="Auto" />
+            <ColumnDefinition Width="Auto" MinWidth="72" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" MinHeight="20" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <!--Placing the Key Image-->
+
+        <Image Grid.Column="0"
+        Grid.Row="0"
+      
+        VerticalAlignment="Top"
+        HorizontalAlignment="Left"
+        Name="imgLogo"
+        Width="98"
+        Margin="8,8,0,0"
+        Source="images/Logo.jpg" Height="66" />
+
+        <!--Placing Large Label-->
+        <Border Grid.Column="1"
+        Grid.Row="0"
+        Grid.ColumnSpan="2"
+        Margin="4,10,4,20"
+        CornerRadius="10">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1"
+                          StartPoint="0.5,0">
+                    <GradientStop Color="#FFC7C2C2"
+                    Offset="0" />
+                    <GradientStop Color="#FF8D8787"
+                    Offset="1" />
+                </LinearGradientBrush>
+            </Border.Background>
+            <TextBlock FontSize="18"
+              Margin="10"
+              Text="Please Login To Access This Application" />
+        </Border>
+        <TextBlock Grid.Column="1"
+            Grid.Row="1"
+            Text="User Name" />
+        <TextBox Grid.Column="2"
+          Grid.Row="1"
+          ToolTipService.ToolTip="Enter Your User Name"
+          Name="txtUserName" />
+        <TextBlock Grid.Column="1"
+            Grid.Row="2"
+            Text="Password" />
+        <PasswordBox Grid.Column="2"
+              Grid.Row="2"
+              ToolTipService.ToolTip="Enter Your Password"
+              Name="txtPassword" />
+    </Grid>
+</Window>
+
+<!--<DockPanel>
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="_Menu" Click="MenuItem_Click">
+                    <MenuItem Header="Login"  />
+                    <MenuItem Header="Stock Control" />
+                    <MenuItem Header="User Access Control" />
+                    <Separator />
+                    <MenuItem Header="Logout" />
+                </MenuItem>
+            </Menu>
+            <TextBox AcceptsReturn="True" />
+        </DockPanel>-->
+
+<!--<FlowDocumentScrollViewer>
+            <FlowDocument>
+                <Paragraph FontSize="36">STYLEZNEW!</Paragraph>
+                <Paragraph FontStyle="Italic" TextAlignment="Left" FontSize="14" Foreground="Gray">Welcome to the backoffice system of the Styleznew new website!</Paragraph>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>-->
+
+<!--<Label Background="AliceBlue"  Margin="0,24,0,0">
+            
+            
+            
+            -->
+<!--<Button  Content="Login" Click="Button_Click" Foreground="Red" Background="Black" Grid.Column="2" Height="32" Width="73">
+
+            </Button>-->
+<!--
+
+        </Label>-->
+

@@ -312,17 +312,31 @@ window.matchMedia || (window.matchMedia = function() {
 
 var assemblies = [
   {
+    "name" : "EntityClassLibrary",
+    "classes" : [
+    {  "name" : "EntityClassLibrary.Category", "reportPath" : "EntityClassLibrary_Category.htm", "coveredLines" : 7, "uncoveredLines" : 0, "coverableLines" : 7, "totalLines" : 27, "coverageType" : "LineCoverage", "methodCoverage" : "-", "coveredBranches" : 0, "totalBranches" : 0, "lineCoverageHistory" : [], "branchCoverageHistory" : [] },
+    {  "name" : "EntityClassLibrary.Customer", "reportPath" : "EntityClassLibrary_Customer.htm", "coveredLines" : 0, "uncoveredLines" : 6, "coverableLines" : 6, "totalLines" : 24, "coverageType" : "LineCoverage", "methodCoverage" : "-", "coveredBranches" : 0, "totalBranches" : 0, "lineCoverageHistory" : [], "branchCoverageHistory" : [] },
+    {  "name" : "EntityClassLibrary.DatabaseMethods", "reportPath" : "EntityClassLibrary_DatabaseMethods.htm", "coveredLines" : 15, "uncoveredLines" : 6, "coverableLines" : 21, "totalLines" : 47, "coverageType" : "LineCoverage", "methodCoverage" : "-", "coveredBranches" : 0, "totalBranches" : 6, "lineCoverageHistory" : [], "branchCoverageHistory" : [] },
+    {  "name" : "EntityClassLibrary.Product", "reportPath" : "EntityClassLibrary_Product.htm", "coveredLines" : 0, "uncoveredLines" : 6, "coverableLines" : 6, "totalLines" : 25, "coverageType" : "LineCoverage", "methodCoverage" : "-", "coveredBranches" : 0, "totalBranches" : 0, "lineCoverageHistory" : [], "branchCoverageHistory" : [] },
+    {  "name" : "EntityClassLibrary.ProjectEntities", "reportPath" : "EntityClassLibrary_ProjectEntities.htm", "coveredLines" : 4, "uncoveredLines" : 5, "coverableLines" : 9, "totalLines" : 32, "coverageType" : "LineCoverage", "methodCoverage" : "-", "coveredBranches" : 0, "totalBranches" : 0, "lineCoverageHistory" : [], "branchCoverageHistory" : [] },
+    {  "name" : "EntityClassLibrary.Repository", "reportPath" : "EntityClassLibrary_Repository.htm", "coveredLines" : 8, "uncoveredLines" : 0, "coverableLines" : 8, "totalLines" : 46, "coverageType" : "LineCoverage", "methodCoverage" : "-", "coveredBranches" : 0, "totalBranches" : 0, "lineCoverageHistory" : [], "branchCoverageHistory" : [] },
+    {  "name" : "EntityClassLibrary.SqlDatabaseReader", "reportPath" : "EntityClassLibrary_SqlDatabaseReader.htm", "coveredLines" : 0, "uncoveredLines" : 4, "coverableLines" : 4, "totalLines" : 17, "coverageType" : "LineCoverage", "methodCoverage" : "-", "coveredBranches" : 0, "totalBranches" : 0, "lineCoverageHistory" : [], "branchCoverageHistory" : [] },
+  ]},
+  {
     "name" : "ProjectClasses",
     "classes" : [
-    {  "name" : "ProjectClasses.Basket", "reportPath" : "ProjectClasses_Basket.htm", "coveredLines" : 7, "uncoveredLines" : 0, "coverableLines" : 7, "totalLines" : 31, "coverageType" : "LineCoverage", "methodCoverage" : "-", "coveredBranches" : 0, "totalBranches" : 0, "lineCoverageHistory" : [], "branchCoverageHistory" : [] },
+    {  "name" : "ProjectClasses.Basket", "reportPath" : "ProjectClasses_Basket.htm", "coveredLines" : 10, "uncoveredLines" : 0, "coverableLines" : 10, "totalLines" : 34, "coverageType" : "LineCoverage", "methodCoverage" : "-", "coveredBranches" : 0, "totalBranches" : 0, "lineCoverageHistory" : [], "branchCoverageHistory" : [] },
     {  "name" : "ProjectClasses.Catalogue", "reportPath" : "ProjectClasses_Catalogue.htm", "coveredLines" : 8, "uncoveredLines" : 0, "coverableLines" : 8, "totalLines" : 23, "coverageType" : "LineCoverage", "methodCoverage" : "-", "coveredBranches" : 0, "totalBranches" : 0, "lineCoverageHistory" : [], "branchCoverageHistory" : [] },
     {  "name" : "ProjectClasses.DatabaseReader", "reportPath" : "ProjectClasses_DatabaseReader.htm", "coveredLines" : 0, "uncoveredLines" : 4, "coverableLines" : 4, "totalLines" : 17, "coverageType" : "LineCoverage", "methodCoverage" : "-", "coveredBranches" : 0, "totalBranches" : 0, "lineCoverageHistory" : [], "branchCoverageHistory" : [] },
-    {  "name" : "ProjectClasses.Item", "reportPath" : "ProjectClasses_Item.htm", "coveredLines" : 0, "uncoveredLines" : 0, "coverableLines" : 0, "totalLines" : 0, "coverageType" : "MethodCoverage", "methodCoverage" : "-", "coveredBranches" : 0, "totalBranches" : 0, "lineCoverageHistory" : [], "branchCoverageHistory" : [] },
+    {  "name" : "ProjectClasses.Item", "reportPath" : "ProjectClasses_Item.htm", "coveredLines" : 1, "uncoveredLines" : 2, "coverableLines" : 3, "totalLines" : 21, "coverageType" : "LineCoverage", "methodCoverage" : "-", "coveredBranches" : 0, "totalBranches" : 0, "lineCoverageHistory" : [], "branchCoverageHistory" : [] },
+    {  "name" : "ProjectClasses.Till", "reportPath" : "ProjectClasses_Till.htm", "coveredLines" : 9, "uncoveredLines" : 0, "coverableLines" : 9, "totalLines" : 39, "coverageType" : "LineCoverage", "methodCoverage" : "-", "coveredBranches" : 2, "totalBranches" : 2, "lineCoverageHistory" : [], "branchCoverageHistory" : [] },
   ]},
   {
     "name" : "ProjectTests",
     "classes" : [
-    {  "name" : "ProjectTests.BasketTest", "reportPath" : "ProjectTests_BasketTest.htm", "coveredLines" : 23, "uncoveredLines" : 0, "coverableLines" : 23, "totalLines" : 59, "coverageType" : "LineCoverage", "methodCoverage" : "-", "coveredBranches" : 0, "totalBranches" : 0, "lineCoverageHistory" : [], "branchCoverageHistory" : [] },
+    {  "name" : "ProjectTests.BasketTest", "reportPath" : "ProjectTests_BasketTest.htm", "coveredLines" : 33, "uncoveredLines" : 0, "coverableLines" : 33, "totalLines" : 98, "coverageType" : "LineCoverage", "methodCoverage" : "-", "coveredBranches" : 0, "totalBranches" : 0, "lineCoverageHistory" : [], "branchCoverageHistory" : [] },
+    {  "name" : "ProjectTests.CheckoutTests", "reportPath" : "ProjectTests_CheckoutTests.htm", "coveredLines" : 20, "uncoveredLines" : 0, "coverableLines" : 20, "totalLines" : 52, "coverageType" : "LineCoverage", "methodCoverage" : "-", "coveredBranches" : 0, "totalBranches" : 0, "lineCoverageHistory" : [], "branchCoverageHistory" : [] },
+    {  "name" : "ProjectTests.DatabaseTests", "reportPath" : "ProjectTests_DatabaseTests.htm", "coveredLines" : 74, "uncoveredLines" : 0, "coverableLines" : 74, "totalLines" : 179, "coverageType" : "LineCoverage", "methodCoverage" : "-", "coveredBranches" : 0, "totalBranches" : 0, "lineCoverageHistory" : [], "branchCoverageHistory" : [] },
     {  "name" : "ProjectTests.UnitTest1", "reportPath" : "ProjectTests_UnitTest1.htm", "coveredLines" : 13, "uncoveredLines" : 0, "coverableLines" : 13, "totalLines" : 43, "coverageType" : "LineCoverage", "methodCoverage" : "-", "coveredBranches" : 0, "totalBranches" : 0, "lineCoverageHistory" : [], "branchCoverageHistory" : [] },
   ]},
 ];
