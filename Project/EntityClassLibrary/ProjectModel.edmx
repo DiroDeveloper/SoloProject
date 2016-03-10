@@ -23,6 +23,13 @@
           <Property Name="Username" Type="varchar" MaxLength="255" />
           <Property Name="Cus_Password" Type="varchar" MaxLength="255" />
         </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="UserName" />
+          </Key>
+          <Property Name="UserName" Type="nchar" MaxLength="250" Nullable="false" />
+          <Property Name="Password" Type="nchar" MaxLength="250" Nullable="false" />
+        </EntityType>
         <EntityType Name="Product">
           <Key>
             <PropertyRef Name="ProductId" />
@@ -48,6 +55,7 @@
         <EntityContainer Name="ProjectModelStoreContainer">
           <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Customers" EntityType="Self.Customers" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK__Product__fk_Cate__0519C6AF" Association="Self.FK__Product__fk_Cate__0519C6AF">
             <End Role="Category" EntitySet="Category" />
@@ -78,6 +86,13 @@
           <Property Name="Username" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="Cus_Password" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
         </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="UserName" />
+          </Key>
+          <Property Name="UserName" Type="String" MaxLength="250" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="250" FixedLength="true" Unicode="true" Nullable="false" />
+        </EntityType>
         <EntityType Name="Product">
           <Key>
             <PropertyRef Name="ProductId" />
@@ -104,6 +119,7 @@
         <EntityContainer Name="ProjectEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Categories" EntityType="Self.Category" />
           <EntitySet Name="Customers" EntityType="Self.Customer" />
+          <EntitySet Name="Employees" EntityType="Self.Employee" />
           <EntitySet Name="Products" EntityType="Self.Product" />
           <AssociationSet Name="FK__Product__fk_Cate__0519C6AF" Association="Self.FK__Product__fk_Cate__0519C6AF">
             <End Role="Category" EntitySet="Categories" />
@@ -133,6 +149,14 @@
                 <ScalarProperty Name="Cus_Address" ColumnName="Cus_Address" />
                 <ScalarProperty Name="Username" ColumnName="Username" />
                 <ScalarProperty Name="Cus_Password" ColumnName="Cus_Password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Employees">
+            <EntityTypeMapping TypeName="ProjectModel.Employee">
+              <MappingFragment StoreEntitySet="Employee">
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

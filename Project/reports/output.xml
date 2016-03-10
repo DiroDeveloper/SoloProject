@@ -92,7 +92,7 @@
       <ModuleName>Microsoft.VisualStudio.QualityTools.Tips.UnitTest.AssemblyResolver</ModuleName>
       <Classes />
     </Module>
-    <Module hash="04-6A-D1-EB-80-D9-8F-8F-46-11-3A-3C-98-68-3A-19-14-B4-6E-20">
+    <Module hash="EE-75-93-E9-DF-49-42-C8-D5-48-BD-B4-5C-C9-75-DB-45-60-9C-DF">
       <Summary numSequencePoints="130" visitedSequencePoints="130" numBranchPoints="19" visitedBranchPoints="19" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="4" numClasses="4" visitedMethods="19" numMethods="19" />
       <FullName>C:\Users\Rukshika.Fernando\Source\Repos\SoloProject\Project\ProjectTests\bin\Debug\ProjectTests.dll</FullName>
       <ModuleName>ProjectTests</ModuleName>
@@ -730,7 +730,7 @@
       <ModuleName>Moq</ModuleName>
       <Classes />
     </Module>
-    <Module hash="14-FD-06-DB-56-40-DF-66-5C-04-E7-E7-08-8C-67-DB-57-09-58-81">
+    <Module hash="2E-83-73-3D-F2-DF-FD-C3-01-6C-E2-14-FD-60-9F-17-BE-F0-3C-E2">
       <Summary numSequencePoints="38" visitedSequencePoints="28" numBranchPoints="16" visitedBranchPoints="7" sequenceCoverage="73.68" branchCoverage="43.75" maxCyclomaticComplexity="4" minCyclomaticComplexity="1" visitedClasses="4" numClasses="6" visitedMethods="7" numMethods="10" />
       <FullName>C:\Users\Rukshika.Fernando\Source\Repos\SoloProject\Project\projecttests\bin\debug\EntityClassLibrary.dll</FullName>
       <ModuleName>EntityClassLibrary</ModuleName>
@@ -1315,14 +1315,14 @@
       <ModuleName>Microsoft.VisualStudio.QualityTools.AgentObject</ModuleName>
       <Classes />
     </Module>
-    <Module skippedDueTo="MissingPdb" hash="DC-BB-C1-4C-4A-D0-77-C4-51-72-1D-4B-6E-68-F2-31-AA-61-44-D3">
-      <FullName>C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\PrivateAssemblies\DataCollectors\Microsoft.VisualStudio.PerformanceTools.DataCollection.dll</FullName>
-      <ModuleName>Microsoft.VisualStudio.PerformanceTools.DataCollection</ModuleName>
-      <Classes />
-    </Module>
     <Module skippedDueTo="MissingPdb" hash="5D-4B-76-CA-B8-70-4D-26-A3-95-E9-EB-A9-4B-C4-42-8D-66-57-63">
       <FullName>C:\Windows\assembly\GAC_MSIL\Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter\12.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter.dll</FullName>
       <ModuleName>Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="DC-BB-C1-4C-4A-D0-77-C4-51-72-1D-4B-6E-68-F2-31-AA-61-44-D3">
+      <FullName>C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\PrivateAssemblies\DataCollectors\Microsoft.VisualStudio.PerformanceTools.DataCollection.dll</FullName>
+      <ModuleName>Microsoft.VisualStudio.PerformanceTools.DataCollection</ModuleName>
       <Classes />
     </Module>
     <Module skippedDueTo="MissingPdb" hash="CC-AD-CE-97-BB-09-2E-35-3A-97-80-5F-28-9B-D3-1D-A6-28-CC-2D">

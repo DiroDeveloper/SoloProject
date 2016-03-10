@@ -41,7 +41,15 @@ namespace EntityClassLibrary
 
             return await query.ToListAsync();
         }
- 
 
+        public Employee AddEmployee(string userName, string password)
+        {
+            var employee = _context.Employees.Add(new Employee { UserName = userName, Password = password });
+            _context.SaveChanges();
+
+            return employee;
+        }
+
+      
     }
 }
